@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+
+
+body {
+	font-size: 16px;
+	overflow-x: hidden;
+	line-height: 1.5;
+	font-family: 'Raleway', 'Roboto Condensed', sans-serif;
+	letter-spacing: 0.5px;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+a {
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+
+.trans {
+	background-color: transparent !important;
+}
+
+.header-content h1, .header-content p {
+	transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+}
+
+.background {
+	width: 100%;
+	max-height: 500px;
+	overflow: hidden;
+	position: relative;
+}
+
+video {
+	position: inherit;
+	min-width: 100%;
+	overflow: hidden;
+	z-index: -1;
+	filter: grayscale(100%);
+	transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+}
+
+.subtitle {
+	font-size: 18px !important;
+}
+
+
+video:hover {
+	filter: grayscale(0%);
+}
+
+/*video:hover{
+	text-shadow: 0.5px 0.5px 0.5px black;
+}*/
+
+.header-styling {
+	text-shadow: 0.5px 0.5px 0.5px black;
+	color: white;
+	font-weight: bold;
+}
+
+
+.header-content {
+	position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.navbar-brand {
+	font-size: 40px;
+	margin: auto;
+	margin-top: -8px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: white !important;
+}
+
+#mainNav {
+	border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+	background-color: #ffffff;
+	transition: all 0.4s;
+}
+
+#mainNav .navbar-brand:focus, #mainNac .navbar-brand:hover {
+
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
+	font-size: .9rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: white;
+	text-shadow: 0.5px 0.5px 0.5px black;
+
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link:hover {
+	text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+}
+/*
+#mainNav .navbar-nav > li.nav-item > a.nav-link:hover {
+	text-shadow: 0.5px 0.5px 0.5px black;
+}*/
+
+.box {
+	position: relative;
+	display: block;
+	max-width: 650px;
+	margin: 0;
+	padding: 0 !important;
+}
+
+.remove-padd {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+.img-fluid {
+	filter: grayscale(100%);
+}
+
+.box .box-caption {
+	position: absolute;
+	bottom: 0;
+	display: block;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	opacity: 0;
+	color: white;
+	font-weight: bold;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+.box-caption-content {
+	text-shadow: 1px 1px 2px white, 0 0 25px blue, 0 0 5px white;
+	position: absolute;
+	top: 17%;
+	width: 100%;
+	transform: translateY(-50%);
+	text-align: center;
+}
+
+.box:hover .box-caption {
+	opacity: 1;
+}
+
+.box:hover .img-fluid {
+	filter: grayscale(0%);
+}
+
+.box:focus {
+	outline: none;
+}
+
+.color-it {
+	background-color: white;	
+}
+
+.logo-color {
+	color: black !important;
+}
+
+.item-color {
+	color: black !important;
+}
+
+.git {
+
+	height: 300px;
+	width: 300px;
+}
+
+.padd-that-shit {
+	padding-top: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
+@media (min-width: 20px) and (max-width: 450px) {
+	.navbar-brand {
+		text-align: center;
+	}
+
+/*	.navbar {
+		background-color: white !important;
+	}*/
+}
+
