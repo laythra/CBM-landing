@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 @import url('https://fonts.googleapis.com/css?family=Merriweather');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+
 * {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -15,7 +17,7 @@ body {
 	font-size: 16px;
 	overflow-x: hidden;
 	line-height: 1.5;
-	font-family: 'Raleway', 'Roboto Condensed', sans-serif;
+	font-family: 'Oxygen', 'Raleway', 'Roboto Condensed', sans-serif;
 	letter-spacing: 0.5px;
 }
 
@@ -37,22 +39,33 @@ a {
 
 .trans {
 	background-color: transparent !important;
+	border: none;
 }
 
 .header-content h1, .header-content p {
 	transition: all 0.3s;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 .background {
-	width: 100%;
-	max-height: 500px;
-	overflow: hidden;
-	position: relative;
+    background: url('../pictures/shooting_stars.png') fixed no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    position: relative;
+    width: 100%;
 }
 
-video {
+.bigger-picture {
+	background: url('../pictures/background-lines.png') fixed no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    position: relative;
+
+}
+/*video {
 	position: inherit;
 	min-width: 100%;
 	overflow: hidden;
@@ -62,15 +75,20 @@ video {
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
 }
+*/
+/*video:hover .title {
+	color: white;
 
+}
+*/
 .subtitle {
 	font-size: 18px !important;
 }
 
-
+/*
 video:hover {
 	filter: grayscale(0%);
-}
+}*/
 
 /*video:hover{
 	text-shadow: 0.5px 0.5px 0.5px black;
@@ -79,7 +97,7 @@ video:hover {
 .header-styling {
 	text-shadow: 0.5px 0.5px 0.5px black;
 	color: white;
-	font-weight: bold;
+
 }
 
 
@@ -89,6 +107,7 @@ video:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    padding-top: 90px;
 }
 .navbar-brand {
 	font-size: 40px;
@@ -102,7 +121,7 @@ video:hover {
 #mainNav {
 	border-bottom: 1px solid rgba(33, 37, 41, 0.1);
 	background-color: #ffffff;
-	transition: all 0.4s;
+	transition: all 0.4s
 }
 
 #mainNav .navbar-brand:focus, #mainNac .navbar-brand:hover {
@@ -115,17 +134,25 @@ video:hover {
 	font-weight: 600;
 	text-transform: uppercase;
 	color: white;
-	text-shadow: 0.5px 0.5px 0.5px black;
+	
 
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link:hover {
-	text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+	text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px white;
 }
 /*
 #mainNav .navbar-nav > li.nav-item > a.nav-link:hover {
 	text-shadow: 0.5px 0.5px 0.5px black;
 }*/
+
+.tempo-class {
+	font-size: .9rem !important;
+	font-weight: 600 !important;
+	text-transform: uppercase !important;
+	color: black !important;
+	text-shadow: 0.5px 0.5px 0.5px white !important;
+}
 
 .box {
 	position: relative;
@@ -142,13 +169,24 @@ video:hover {
 
 .img-fluid {
 	filter: grayscale(100%);
+	height: 406px;
+	width: 100%;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
+
 }
+.sizz {
+	padding: 18spx;
+	font-size: 30px;
+	font-weight: 20;
+	color: #6e7d84;
+}
+
 
 .box .box-caption {
 	position: absolute;
 	bottom: 0;
 	display: block;
-	height: 100%;
 	width: 100%;
 	text-align: center;
 	opacity: 0;
@@ -198,10 +236,189 @@ video:hover {
 }
 
 .padd-that-shit {
-	padding-top: 20px;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	text-align: center;
+	font-weight: 300 !important;
 }
+
+.CBM {
+	font-weight: 700 !important;
+/*	text-align: center;*/
+
+}
+
+.centerr {
+	text-align: center;
+}
+
+.btn {
+	border-radius: 24px;
+	font-size: 25px;
+	padding: 10px 20px;
+	margin-left: 15px;
+	color: black;
+	border-color: #d8dcdf;
+	border-width: 2px;
+	color: #78878e;
+	font-weight: 300 !important;
+}
+
+.capp {
+	color: #78878e;
+	font-weight: 800;
+}
+
+.btn:hover, .btn:focus {
+	background-color: transparent;
+	color: #43004f !important;
+	border-color: #43004f !important;
+}
+
+.btn:focus {
+	background-color: transparent !important;
+}
+.menu-items {
+	color: black;
+}
+
+
+.imgg {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  width: 220px;
+  height: 220px;
+  border-radius: 110px;
+  -webkit-border-radius: 110px;
+/*  box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8*/);
+  filter: grayscale(0%);
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #43004f;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+.overlay:hover {
+  opacity: 0.6;
+}
+
+
+
+.imgg img {
+	height: 100%;
+}
+
+a {
+	color: white;
+}
+
+.img__overlay {
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: opacity 0.25s;
+  z-index: 1;
+}
+.img__overlay:hover {
+  opacity: 1;
+}
+
+.img__overlay {
+  background-color: rgba(46,204,113,0.4);
+  background: linear-gradient(65deg, rgba(46,204,113,0.4), rgba(243,156,18,0.4));
+  color: #fafafa;
+  font-size: 16px;
+  text-shadow: 2px 2px 4px #000000;
+
+}
+
+.pdd {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.cc {
+	size: 30px;
+}
+
+.footer {
+	height: 70px;
+	background-color: #43004f;
+	clear: both;
+	color: white;
+	text-align: center;
+	box-shadow: 2px 3	px 8px;
+}
+
+/*.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}*/
+
+.c1 {
+	margin-top: auto;
+	margin-bottom: auto;
+	padding: 22px 60px 20px;
+	border: black;
+}
+
+.give-it-shadowwwwwwwwwwww {
+	box-shadow: 5px 10px 8px #888888;
+}
+
+
+
+
+/*.imgg:hover {
+	filter: grayscale(100%);
+}
+*/
+
+
 
 
 @media (min-width: 20px) and (max-width: 450px) {
